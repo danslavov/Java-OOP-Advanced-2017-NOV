@@ -27,3 +27,4 @@ hs_err_pid*
 .idea/
 out/
 /Java-OOP-Advanced-2017-NOV.iml
+/src/_07_UnitTesting/lab/target/
