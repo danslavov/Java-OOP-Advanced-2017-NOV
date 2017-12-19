@@ -1,4 +1,4 @@
-package p01_Database;
+package _07_UnitTesting.ex.src.p01_Database;
 
 import org.junit.Assert;
 import org.junit.Test;
