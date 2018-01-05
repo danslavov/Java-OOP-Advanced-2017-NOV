@@ -5,7 +5,7 @@ import _10_ObjectCommunicationAndEvents.ex.p02_king_gambit.implementations.chara
 import _10_ObjectCommunicationAndEvents.ex.p02_king_gambit.implementations.characters.RoyalGuard;
 import _10_ObjectCommunicationAndEvents.ex.p02_king_gambit.implementations.commands.AttackKingCommand;
 import _10_ObjectCommunicationAndEvents.ex.p02_king_gambit.implementations.commands.CommandExecutor;
-import _10_ObjectCommunicationAndEvents.ex.p02_king_gambit.implementations.commands.KillCharacterCommand;
+import _10_ObjectCommunicationAndEvents.ex.p02_king_gambit.implementations.commands.HarmCharacterCommand;
 import _10_ObjectCommunicationAndEvents.ex.p02_king_gambit.interfaces.command_layer.Command;
 import _10_ObjectCommunicationAndEvents.ex.p02_king_gambit.interfaces.command_layer.Executor;
 import _10_ObjectCommunicationAndEvents.ex.p02_king_gambit.interfaces.observation_layer.Observer;
@@ -51,8 +51,8 @@ public class Main {
                 exe.executeCommand(attackCommand);
             } else {
                 String characterName = tokens[1];
-                Command killCommand = new KillCharacterCommand(king, characterName);
-                exe.executeCommand(killCommand);
+                Command harmCommand = new HarmCharacterCommand(king, characterName);
+                exe.executeCommand(harmCommand);
             }
         }
     }
